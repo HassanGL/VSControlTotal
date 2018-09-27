@@ -1,0 +1,110 @@
+<resources>
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">10dp</item>
+        <item name="android:maxWidth">10dp</item>
+        <item name="android:width">10dp</item>
+    </style>
+
+    <style name="navigationViewStyle" />
+    <style name="asd" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:minWidth">10dp</item>
+        <item name="android:maxWidth">10dp</item>
+        <item name="android:width">10dp</item>
+        
+        
+    </style>
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/gris</item>
+        <item name="android:fontFamily">@font/fuentee</item>
+        <item name="android:textColor">@color/colorb</item>
+        <item name="android:colorAccent">@color/colorb</item>
+        <item name="android:textColorPrimary">@color/colorb</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/gris</item>
+        <item name="colorPrimaryDark">@color/colorb</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+
+    </style>
+    <style name="AppTheme.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+
+
+    </style>
+
+    <style name="Estilo1">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/fuentee</item>
+        <item name="android:textSize">16dp</item>
+
+    </style>
+
+    <style name="Estilo2">
+
+        <item name="android:fontFamily">@font/fuentee</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="Estilo3">
+
+        <item name="android:textColor">@color/colorb</item>
+        <item name="android:fontFamily">@font/fuenteeb</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="Estilo4b">
+        <item name="android:textColor">@color/colorb</item>
+        <item name="android:fontFamily">@font/fuenteeb</item>
+        <item name="android:textSize">20dp</item>
+
+    </style>
+
+    <style name="Estilo5">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/fuentee</item>
+    </style>
+
+    <style name="Estilo6">
+        <item name="android:textColor">@color/colorb</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/fuentee</item>
+    </style>
+
+    <style name="Estilo7">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/fuenteeb</item>
+    </style>
+
+    <style name="Estilo8">
+        <item name="android:color">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20dp</item>
+
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:fontFamily">@font/fuenteeb</item>
+    </style>
+
+    <style name="Toolbar" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:fontFamily">@font/fuentee</item>
+        <item name="android:background">@color/gris</item>
+
+    </style>
+
+    <style name="Toolbar_Popup" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionButtonStyle">@style/asd</item>
+
+
+        <item name="android:listPreferredItemPaddingLeft">-50dp</item>
+        <item name="android:listPreferredItemPaddingRight">-50dp</item>
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:fontFamily">@font/fuentee</item>
+        <item name="android:background">@color/gris</item>
+    </style>
+
+</resources>

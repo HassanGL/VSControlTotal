@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#425566"
+    tools:context=".loginalt">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+
+                        app:srcCompat="@drawable/logocontrol" />
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        style="@style/Estilo4b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VS Control Total\n[2018.2.95]"
+
+                        />
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="15dp"
+                        app:srcCompat= "@drawable/erp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Configuración inicial"
+                        style="@style/Estilo4b"/>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorb"
+                        android:orientation="horizontal"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_4"
+                            style="@style/Estilo4b"
+
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:text="Webservice:"
+                            />
+
+                        <EditText
+
+                            android:id="@+id/et_ws"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+
+                            android:ems="10"
+                            android:background="@color/colorb"
+                            style="@style/Estilo5"
+                            android:hint="Ingrese un webservice"
+                            android:inputType="textPersonName"
+                            android:text="" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:onClick="ac_ws"
+                            style="@style/Estilo6"
+                            android:textSize="21dp"
+                            android:layout_gravity="center_vertical"
+                            android:text=" Confirmar "
+                            android:background="@drawable/fa"/>
+
+                        <TextView
+                            android:layout_marginLeft="100dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:onClick="salir"
+                            style="@style/Estilo6"
+                            android:textSize="21dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="  Cancelar  "
+                            android:background="@drawable/fa"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="400dp"
+                    android:layout_gravity="center"
+                    android:layout_height="190dp"
+                    android:background="@drawable/bgheader"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8d91ac</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#001eff</color>
+<color name="colorf">#101848</color>
+    <color name="colorb">#ffffff</color>
+    <color name="fondtit">#08000000</color>
+    <color name="azul">#5bc0de</color>
+    <color name="lintit">#1F000000</color>
+    <color name="my_spinner_text_color">#000000</color>
+<color name="gris">#30302F</color>
+</resources>

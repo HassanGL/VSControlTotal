@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorb"
+    android:layout_height="match_parent"
+    tools:context=".DetallesFac">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@drawable/titback"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/tit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Estilo1"
+
+            android:text="Detalle de la factura "
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:onClick="bye"
+            android:layout_marginRight="15dp"
+            android:layout_width="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="20dp"
+            android:src="@drawable/at"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border2"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/titback2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/tit2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Estilo7"
+                    android:textSize="20dp"
+
+                    android:text="Datos de la factura "
+                    />
+            </LinearLayout>
+
+
+
+                <TableLayout
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/table"
+                    android:shrinkColumns="*"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="4dp"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="4dp"
+
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo7"
+                        android:text="Fecha del documento:"/>
+                    <TextView
+                        android:id="@+id/tv_df1"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo2"
+                        android:text=""/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo7"
+                        android:text="Proveedor:"/>
+                    <TextView
+                        android:id="@+id/tv_df2"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo2"
+                        android:text=""/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo7"
+                        android:text="Obra:"/>
+                    <TextView
+                        android:id="@+id/tv_df3"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo2"
+                        android:text=""/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo7"
+                        android:text="Notas:"/>
+                    <TextView
+                        android:id="@+id/tv_df4"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo2"
+                        android:text=""/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo7"
+                        android:text="Revisada por:"/>
+                    <TextView
+                        android:id="@+id/tv_df5"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo2"
+                        android:text=""/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo7"
+                        android:text="Autorizada por:"/>
+                    <TextView
+                        android:id="@+id/tv_df6"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo2"
+                        android:text=""/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo7"
+                        android:text="Subtotal:"/>
+                    <TextView
+                        android:id="@+id/tv_df7"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo2"
+                        android:text=""/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo7"
+                        android:text="IVA:"/>
+                    <TextView
+                        android:id="@+id/tv_df8"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo2"
+                        android:text=""/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo7"
+                        android:text="Total:"/>
+                    <TextView
+                        android:id="@+id/tv_df9"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Estilo2"
+                        android:text=""/>
+
+                </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border2"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/titback2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/tit2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Estilo7"
+                    android:textSize="20dp"
+
+                    android:text="Documento vinculado "
+                    />
+
+            </LinearLayout>
+        <TableLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/table3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:shrinkColumns="*">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Estilo7"
+                android:text="Avance de contrato:"/>
+            <TextView
+                android:id="@+id/tv_df10"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Estilo2"
+                android:text=""/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Estilo7"
+                android:text="Autorizado por:"/>
+            <TextView
+                android:id="@+id/tv_df11"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Estilo2"
+                android:text=""/>
+        </TableRow>
+        </TableLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_weight="4"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Estilo6"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Autorizar"
+            android:onClick="autorizar"
+            android:textAlignment="center"
+            android:background="@drawable/f1"
+            />
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="4dp"
+android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Estilo6"
+                android:onClick="rechazar"
+                android:text="Rechazar"
+                android:background="@drawable/f2"
+                />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+        </LinearLayout>
+
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

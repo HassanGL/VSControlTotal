@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/grp8" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/home"
+
+            android:title="Estatus Financiero de Obras" />
+    </group>
+    <group android:id="@+id/grp7" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/timeTable"
+
+            android:title="Análisis de Estado de Cuenta Mensual" />
+    </group>
+    <group android:id="@+id/grp6" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/examSchedule"
+
+            android:title="Cuentas por Pagar" />
+    </group>
+    <group android:id="@+id/grp5" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/attendence"
+
+            android:title="Cuentas por Cobrar" />
+    </group>
+    <group android:id="@+id/grp4" android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/result"
+
+            android:title="Análisis del Seguimiento de Estimaciones" />
+    </group>
+    <group android:id="@+id/grp3" android:checkableBehavior="single" >
+            <item
+                android:id="@+id/fb"
+
+                android:title="Reporte de Órdenes de Compra" />
+    </group>
+    <group android:id="@+id/grp2" android:checkableBehavior="single" >
+            <item
+                android:id="@+id/gplus"
+
+                android:title="Reporte de Requisiciones" />
+    </group>
+    <group android:id="@+id/grp1" android:checkableBehavior="single" >
+            <item
+                android:id="@+id/twitter"
+
+                android:title="▼ Almacenes" />
+
+</group>
+    <group android:id="@+id/grp9" android:checkableBehavior="single" >
+            <item
+                android:id="@+id/youtube"
+
+                android:title="▼ Administrción" />
+
+    </group>
+    <group android:id="@+id/grp10" android:checkableBehavior="single" >
+            <item
+                android:id="@+id/github"
+
+                android:title="▼ Control de Obras" />
+
+    </group>
+    <group android:id="@+id/grp11" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/equipos"
+
+            android:title="▼ Equipos" />
+
+    </group>
+    <group android:id="@+id/grp12" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/produccion"
+
+            android:title="▼ Producción" />
+
+    </group>
+    <group android:id="@+id/grp13" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/graficas"
+
+            android:title="▼ Graficas" />
+
+    </group>
+    <item
+        android:id="@+id/firstOne"
+        android:orderInCategory="1"
+        android:title="First One"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/menuSortNewest"
+                app:showAsAction="never"
+                android:title="1-1" />
+            <item
+                android:id="@+id/menuSortRating"
+                app:showAsAction="never"
+                android:title="1-2" />
+        </menu>
+    </item>
+
+
+</menu>

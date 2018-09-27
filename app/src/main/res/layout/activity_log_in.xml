@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#425566"
+    tools:context=".LogIn">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            app:srcCompat="@drawable/logocontrol" />
+
+        <TextView
+        android:id="@+id/tv_1"
+        style="@style/Estilo4b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS Control Total\n[2018.2.95]"
+         />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inicio de sesión"
+                style="@style/Estilo4b"/>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorb"
+            android:orientation="horizontal"
+            />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_3"
+            style="@style/Estilo4b"
+
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Empresa:"
+            />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:background="@color/colorb"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+             />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/tv_4"
+            style="@style/Estilo4b"
+
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Usuario:"
+            />
+
+        <EditText
+
+            android:id="@+id/et_usu"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:background="@color/colorb"
+            style="@style/Estilo5"
+            android:hint="Ingrese su usuario"
+            android:inputType="textPersonName"
+            android:text="" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/tv_5"
+            style="@style/Estilo4b"
+
+
+
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Contraseña:"
+            />
+        <EditText
+            android:id="@+id/et_cont"
+            android:background="@color/colorb"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            style="@style/Estilo5"
+            android:hint="Ingrese su contraseña"
+
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/f"
+android:onClick="con"
+            app:srcCompat="@drawable/img" />
+
+        <TextView
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:onClick="Log"
+            style="@style/Estilo6"
+            android:textSize="21dp"
+            android:layout_gravity="center_vertical"
+            android:text="  Iniciar sesión  "
+            android:background="@drawable/f"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
