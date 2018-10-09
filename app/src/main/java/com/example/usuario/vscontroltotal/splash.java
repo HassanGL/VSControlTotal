@@ -7,8 +7,8 @@ import android.os.Bundle;
 
 public class splash extends AppCompatActivity {
 
-    private final int DURACION_SPLASH = 1200; // 3 segundos
-config conf;
+    private final int DURACION_SPLASH = 1200; // 1.2 segundos
+    config conf;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

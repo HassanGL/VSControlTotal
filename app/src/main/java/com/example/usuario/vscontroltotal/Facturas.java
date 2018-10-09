@@ -85,7 +85,7 @@ public class Facturas extends AppCompatActivity   implements NavigationView.OnNa
     ProgressBar progressBar;
     NavigationView navigationView;
     Toolbar appbar;
-    AlertDialog.Builder dialogo1,dialogo12;
+    AlertDialog.Builder dialogo1,dialogo12, conexion;
     EditText descriptionBox;
     DrawerLayout drawerLayout;
     int bs;
@@ -97,11 +97,24 @@ public class Facturas extends AppCompatActivity   implements NavigationView.OnNa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_facturasal);
+
+        conexion = new AlertDialog.Builder(this, R.style.MyDialogTheme);
+        conexion.setTitle("Estado de Conexion");
+        conexion.setMessage("Conexion Correcta");
+        conexion.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialogo1, int id) {
+                cancelar();
+            }
+        });
+        conexion.create().show();
+
         navigationView = findViewById(R.id.list_view);
         expandableListView = findViewById(R.id.expandableListView);
         prepareMenuData();
+
         pieChart = (PieChart) findViewById(R.id.piechart);
         pieChart.setUsePercentValues(true);
+
         getWindow().setStatusBarColor(getResources().getColor(R.color.gris));
 
         populateExpandableList();
@@ -162,9 +175,6 @@ public class Facturas extends AppCompatActivity   implements NavigationView.OnNa
 
          drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
-
-       int NUM_COLS=6;
-      int NUM_ROWS=2;
 
       cuadro1();
       cuadro3();
