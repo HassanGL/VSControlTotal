@@ -49,6 +49,7 @@ public class LogIn extends AppCompatActivity {
 
     Spinner spinner;
     EditText et,et1;
+    TextView prueba;
     AlertDialog.Builder dialogo12;
     private ProgressDialog dialogo;
 
@@ -69,6 +70,7 @@ public class LogIn extends AppCompatActivity {
         getWindow().setStatusBarColor(getResources().getColor(R.color.gris));
         et = (EditText) findViewById(R.id.et_cont);
         et1 = (EditText) findViewById(R.id.et_usu);
+        prueba = findViewById(R.id.pruena);
 
         spinner = (Spinner) findViewById(R.id.spinner);
 
@@ -217,11 +219,12 @@ public class LogIn extends AppCompatActivity {
                 //Error Message
                 Toast.makeText(LogIn.this,loginStatus,Toast.LENGTH_SHORT).show();
                 Toast.makeText(LogIn.this, String.valueOf(intEmpresa), Toast.LENGTH_LONG).show();
+                prueba.setText(loginStatus);
             }else{
                 //Connection Message
                 Toast.makeText(LogIn.this,loginStatus,Toast.LENGTH_SHORT).show();
                 Toast.makeText(LogIn.this, String.valueOf(intEmpresa), Toast.LENGTH_LONG).show();
-                startActivity(Facturas);
+                //startActivity(Facturas);
             }
         }
 

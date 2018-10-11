@@ -90,8 +90,6 @@ public class Facturas extends AppCompatActivity   implements NavigationView.OnNa
     DrawerLayout drawerLayout;
     int bs;
 
-
-
     LinearLayout.LayoutParams layoutParams;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -215,7 +213,6 @@ public class Facturas extends AppCompatActivity   implements NavigationView.OnNa
         but12.setLayoutParams(new LinearLayout.LayoutParams(75, 75));
         sp2.setLayoutParams(new LinearLayout.LayoutParams(35,75));
         but13.setLayoutParams(new LinearLayout.LayoutParams(75, 75));
-
 
     }
 
